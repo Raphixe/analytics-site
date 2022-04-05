@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stat Man</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/71ed5961d0.js" crossorigin="anonymous"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            },
+          }
+        }
+    </script>
+
+    <style type="text/tailwindcss">
+        @layer components {
+            .btn-primary {
+                @apply border-4 border-transparent bg-blue-500 text-white font-bold rounded-full shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+            };
+            .btn-secondary {
+                @apply border-4 border-white text-white font-bold rounded-full hover:border-blue-500;
+            }
+        }
+    </style>
+    
+</head>
+
+<body>
+
+    <section class="flex flex-col items-center justify-center w-full px-6 pt-6 text-white bg-gray-800">
+        
+        <nav class="flex items-center justify-between w-full">
+
+            <div>
+                <a href="/">
+                    <span class="text-2xl font-black uppercase"><span class="text-blue-500">://</span>INSITE</span>
+                </a>
+            </div>
+
+            <div class="font-bold uppercase text-s">
+                <a href="/" class="mr-6 hover:text-blue-500 focus:outline-none">Fix</a>
+                <a href="/" class="mr-6 hover:text-blue-500 focus:outline-none">Audit</a>
+                <a href="#" class="mr-6 hover:text-blue-500 focus:outline-none">Insights</a>
+                <a href="#" class="mr-6 hover:text-blue-500 focus:outline-none">Reporting</a>
+                <span class="mr-6 text-blue-500">|</span>
+                <a href="#" class="mr-6 hover:text-blue-500 focus:outline-none">About</a>
+                <a href="#" class="px-4 py-2 btn-primary">Get in touch</a>
+            </div>
+
+        </nav>
+
+        <header class="container flex items-center justify-between mt-12 xl:max-w-7xl 2xl:max-w-7xl">
+
+            <div class="flex-col items-center justify-between max-w-2xl">
+                <h1 class="text-5xl font-bold uppercase leading-tight">Transform your analytics into insights</h1>
+                <h2 class="max-w-xl mt-6 text-xl">No matter how bad you feel your analytics are now, we can help you to acheive actionable insights and finally make it work for your business</h2>
+                <div class="mt-7">
+                    <a href="#" class="inline-block px-8 py-3 uppercase btn-primary">Actionable Insights</a>
+                    <a href="#" class="inline-block px-8 py-3 ml-6 uppercase btn-secondary">Analytics Audit</a>
+                </div>
+            </div>
+
+            <div class="">
+                <img src="https://www.icaew.com/-/media/corporate/images/afe/academy/data-analytics_no-divider_750x750.ashx?la=en&h=750&w=750&mw=800&hash=0AF504C624D9698BC8B5E23C45EC8D5D68C6A4BF"/>
+            </div>
+
+        </header>
+
+    </section>
+
+    <div class="flex items-center justify-around w-full py-4 bg-gray-200">
+        <img class="w-52" src="../src/img/ga-logo.svg"/>
+        <img class="w-52" src="../src/img/gtm-logo.svg"/>
+        <img class="w-52" src="../src/img/ds-logo.svg"/>
+        <img class="w-52" src="../src/img/matomo-logo.svg"/>
+    </div>
+      
+    <section class="bg-white">        
+        <main class="container flex items-center justify-between py-14 mx-auto xl:max-w-7xl 2xl:max-w-7xl">
+
+            <div class="flex-col items-center justify-between max-w-2xl">
+                
+                <span class="uppercase text-2xl font-black text-blue-500">Insite fix</span>
+                <h2 class="text-4xl font-bold mt-3">Issues with your Analytics?</h2>
+                
+                <p class="mt-4 text-lg">Have you noticed that your data is unreliable, broken or just not providing you with any value? Insite can help you wrangle your analytics into shape again and ensure that it's setup in a way that works for your business. Here's a list of common issues we see that you might notice in your own analytics:</p>
+                
+                <ul class="mt-4 ml-4 text-lg">
+                    <li><i class="fas fa-chevron-right text-blue-500 mr-4"></i>Missing data</li>
+                    <li><i class="fas fa-chevron-right text-blue-500 mr-4"></i>A bounce rate between 1-10%</li>
+                    <li><i class="fas fa-chevron-right text-blue-500 mr-4"></i>Duplicate pageviews</li>
+                    <li><i class="fas fa-chevron-right text-blue-500 mr-4"></i>Conversions attributed to payment gateways</li>
+                    <li><i class="fas fa-chevron-right text-blue-500 mr-4"></i>Goals no longer working</li>
+                    <li><i class="fas fa-chevron-right text-blue-500 mr-4"></i>Spam and bot traffic</li>
+                    <li><i class="fas fa-chevron-right text-blue-500 mr-4"></i>Contains PII (personally identifiable information)</li>
+                </ul>
+            </div>
+
+            <div class="text-right">
+                <div>
+                    <p class="font-bold uppercase">Starting from</p>
+                    <span class="font-bold uppercase text-6xl text-blue-500">£89</span>
+
+                    <ul class="mt-4 ml-4 text-lg text-gray-600">
+                        <li>Free no-obligation quote<i class="fas fa-check ml-4"></i></li>
+                        <li>Investigation & report<i class="fas fa-check ml-4"></i></li>
+                        <li>Advice on avoiding future issues<i class="fas fa-check ml-4"></i></li>
+                        <li>Analytic issues annotated<i class="fas fa-check ml-4"></i></li>
+                        <li>Fixes tested & verified<i class="fas fa-check ml-4"></i></li>
+                        <li>GTM Implementation<i class="fas fa-check ml-4"></i></li>
+                    </ul>
+                </div>
+                <a href="#" class="mt-6 inline-block px-8 py-3 uppercase btn-primary">Get a quote</a>
+            </div>
+        </main>
+    </section>
+
+
+    <section>        
+        <footer>
+            asd
+        </footer>
+    </section>
+
+    <script src="./dist/main.js"></script>
+</body>
+</html>

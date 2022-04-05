@@ -5,35 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stat Man</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/71ed5961d0.js" crossorigin="anonymous"></script>
-
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            },
-          }
-        }
-    </script>
-
-    <style type="text/tailwindcss">
-        @layer components {
-            .btn-primary {
-                @apply border-4 border-transparent bg-blue-500 text-white font-bold rounded-full shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
-            };
-            .btn-secondary {
-                @apply border-4 border-white text-white font-bold rounded-full hover:border-blue-500;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="dist/style.css">
     
+    <script src="https://kit.fontawesome.com/71ed5961d0.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="bg-theme-test">
 
     <section class="flex flex-col items-center justify-center w-full px-6 pt-6 text-white bg-gray-800">
         
